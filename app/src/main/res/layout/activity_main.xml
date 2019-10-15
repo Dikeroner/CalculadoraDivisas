@@ -14,12 +14,12 @@
         app:layout_constraintGuide_percent="0" />
 
     <Button
-        android:id="@+id/btnExtra"
+        android:id="@+id/btnNum0"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_Bottom"
-        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintDimensionRatio="2:0"
         app:layout_constraintLeft_toLeftOf="@id/guideline_Left"
         app:layout_constraintRight_toRightOf="@+id/guideline_SegundaColumna"
         app:layout_constraintTop_toTopOf="@id/guideline_PrimeraFila" />
@@ -31,7 +31,7 @@
         android:text=","
         app:layout_constraintBottom_toBottomOf="@+id/guideline_Bottom"
         app:layout_constraintTop_toTopOf="@id/guideline_PrimeraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_SegundaColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_TerceraColumna" />
 
@@ -42,7 +42,7 @@
         android:text="="
         app:layout_constraintBottom_toBottomOf="@+id/guideline_Bottom"
         app:layout_constraintTop_toTopOf="@id/guideline_PrimeraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_TerceraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_right" />
 
@@ -59,10 +59,10 @@
         android:layout_height="0dp"
         android:text="1"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_PrimeraFila"
-        app:layout_constraintTop_toTopOf="@id/guideline_SegundaFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@id/guideline_Left"
-        app:layout_constraintRight_toRightOf="@+id/guideline_PrimeraColumna" />
+        app:layout_constraintRight_toRightOf="@+id/guideline_PrimeraColumna"
+        app:layout_constraintTop_toTopOf="@id/guideline_SegundaFila" />
 
     <Button
         android:id="@+id/btnNum2"
@@ -71,7 +71,7 @@
         android:text="2"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_PrimeraFila"
         app:layout_constraintTop_toTopOf="@id/guideline_SegundaFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_PrimeraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_SegundaColumna" />
 
@@ -82,21 +82,23 @@
         android:text="3"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_PrimeraFila"
         app:layout_constraintTop_toTopOf="@id/guideline_SegundaFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_SegundaColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_TerceraColumna" />
 
-    <Button
+
+    <ImageButton
         android:id="@+id/btnBorra"
+        app:srcCompat="@mipmap/delete_text_xxxhdpi"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="centerInside"
         android:drawableStart="@mipmap/delete_text_mdpi"
-        android:paddingLeft="33sp"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_SegundaFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_TerceraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_right"
-        app:layout_constraintTop_toTopOf="@id/guideline_TerceraFila" />
+        app:layout_constraintTop_toTopOf="@id/guideline_TerceraFila"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_SegundaFila"
@@ -112,7 +114,7 @@
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/guideline_SegundaFila"
         app:layout_constraintTop_toTopOf="@id/guideline_TerceraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@id/guideline_Left"
         app:layout_constraintRight_toRightOf="@+id/guideline_PrimeraColumna" />
 
@@ -123,7 +125,7 @@
         android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/guideline_SegundaFila"
         app:layout_constraintTop_toTopOf="@id/guideline_TerceraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_PrimeraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_SegundaColumna" />
 
@@ -134,7 +136,7 @@
         android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/guideline_SegundaFila"
         app:layout_constraintTop_toTopOf="@id/guideline_TerceraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_SegundaColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_TerceraColumna" />
 
@@ -152,7 +154,7 @@
         android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/guideline_TerceraFila"
         app:layout_constraintTop_toTopOf="@id/guideline_MitadPantalla"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@+id/guideline_PrimeraColumna" />
 
@@ -163,7 +165,7 @@
         android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/guideline_TerceraFila"
         app:layout_constraintTop_toTopOf="@id/guideline_MitadPantalla"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_PrimeraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_SegundaColumna" />
 
@@ -174,7 +176,7 @@
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/guideline_TerceraFila"
         app:layout_constraintTop_toTopOf="@id/guideline_MitadPantalla"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_SegundaColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_TerceraColumna" />
 
@@ -212,7 +214,7 @@
         android:layout_height="0dp"
         android:text="CE"
         app:layout_constraintBottom_toBottomOf="@+id/guideline_TerceraFila"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1:0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline_TerceraColumna"
         app:layout_constraintRight_toRightOf="@+id/guideline_right"
         app:layout_constraintTop_toTopOf="@id/guideline_MitadPantalla" />
